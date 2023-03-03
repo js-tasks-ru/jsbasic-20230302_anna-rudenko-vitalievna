@@ -1,3 +1,3 @@
 function checkSpam(str) {
-  // ваш код...
+  return str.includes('1xBet') || str.includes('XXX'); 
 }

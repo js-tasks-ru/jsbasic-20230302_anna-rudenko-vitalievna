@@ -1,3 +1,7 @@
+// Необходимо, чтобы на сайте можно было поприветствовать только пользователей, которые удовлетворяют следующему условию – имя не
+// пустое, без пробелов, минимум 4 символа.
+
+
 /**
  * Эту функцию трогать не нужно
  */
@@ -8,11 +12,20 @@ function print(text) {
 /**
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
+ * @param {string | null} name
+ * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
+    if (name=='' || name.length < 4 || name.includes(' ')){
+        return alert('Ошибка');
+    }else{
+        return alert(name);
+    }
 }
 
+/**
+ * Эту функцию трогать не нужно
+ */
 function sayHello() {
   let userName = prompt('Введите ваше имя');
 
@@ -22,3 +35,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello();
