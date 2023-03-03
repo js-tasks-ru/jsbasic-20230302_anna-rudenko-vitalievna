@@ -16,11 +16,11 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-    if (name=='' || name.length < 4 || name.includes(' ')){
-        return alert('Ошибка');
-    }else{
-        return alert(name);
-    }
+    if (name=='' || name.length < 4 || name.includes(' ') || name == null){
+      return false;
+  }else{
+      return true;
+  }
 }
 
 /**
