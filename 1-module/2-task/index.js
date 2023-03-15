@@ -16,7 +16,7 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  return name && name.length > 3 && !name.includes(' ');
+  return Boolean(name) && name.length > 3 && !name.includes(' ');
 }
 
 /**
