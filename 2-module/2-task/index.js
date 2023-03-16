@@ -5,4 +5,8 @@ function isEmpty(obj) {
     }
   }
   return false;
+    for(let key in obj){
+        return false;
+    }
+    return true;
 }
